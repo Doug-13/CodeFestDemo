@@ -33,21 +33,21 @@
                 <a class="navbar-brand" href="#">
                     <img src="images/WhatsApp Image 2023-07-16 at 14.43.30.jpeg" alt="Logo" width="120" height="80"
                         class="d-inline-block align-text-top">
-                    <strong>Cadastro Social de Famílias </strong>
+
                 </a>
 
+                <div class="container">
+                    <div class="row">
+                        <div class="header container ">
+                            <h1>Cadastro Social de Famílias</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </Header>
     <div id="fundo">
-        <style>
-            #fundo {
-                border: 2px solid rgb(255, 255, 255);
-                margin: 3rem;
-                padding: 2rem;
-                background-color: rgba(255, 255, 255, 0.3);
-            }
-        </style>
+
 
         <div class="container">
             <div class="row">
@@ -104,175 +104,165 @@
                 </div>
             </form>
         </div>
-            <!-- ########################## COMPOSIÇÃO FAMILIAR ################################################ -->
+        <!-- ########################## COMPOSIÇÃO FAMILIAR ################################################ -->
 
 
-            <!-- Dados -->
-            <div id="container" class="container mt-3">
+        <!-- Dados -->
+        <div id="container" class="container mt-3">
+            <div class="container">
+                <div class="row">
+                    <div id="header" class="container">
+                        <h3>Composição familiar</h3>
+                    </div>
+                </div>
+            </div>
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col p-2 ">
+                        <input Id="qtdMembros" type="number" class="form-control"
+                            placeholder="Quantidade de Membros da família "
+                            aria-label="Quantidade de Membros da família " required />
+                    </div>
+
+            </form>
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col p-2 ">
+                        <input Id="nomeDp" type="text" class="form-control" placeholder="Nome completo"
+                            aria-label="Nome completo" required />
+                    </div>
+
+                    <div class="col p-2 ">
+                        <input Id="dtNascDp" type="text" class="form-control" placeholder="Data de Nascimento"
+                            aria-label="Data de Nascimento" required />
+                    </div>
+                </div>
+            </form>
+
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col p-2 ">
+                        <input Id="parentesco" type="text" class="form-control" placeholder="Grau de parentesco"
+                            aria-label="Grau de parentesco" required />
+                    </div>
+                    <div class="col p-2 ">
+                        <select Id="sexoDp" class="form-select form-control " aria-label=".form-select-sm example">
+                            <option selected>Sexo</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Feminino</option>
+                            <option value="3">Prefiro não informar</option>
+                        </select>
+                    </div>
+
+                    <div class="col p-2 ">
+                        <select Id="pcdDp" class="form-select form-control " aria-label=".form-select-sm example">
+                            <option selected>PCD</option>
+                            <option value="1">Sim</option>
+                            <option value="2">Não</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" Id="observacao"></textarea>
+                <label for="floatingTextarea">Observações relevantes: doenças, cuidados, etc...</label>
+            </div>
+
+
+            <!-- ############################# ENDEREÇO ################### -->
+            <div Id="container" class="container mt-3">
                 <div class="container">
                     <div class="row">
-                        <div id="header" class="container">
-                            <h3>Composição familiar</h3>
+                        <div Id="header" class="container">
+                            <h3>Endereço</h3>
                         </div>
                     </div>
                 </div>
                 <form action="/action_page.php">
                     <div class="row">
                         <div class="col p-2 ">
-                            <input Id="qtdMembros" type="number" class="form-control"
-                                placeholder="Quantidade de Membros da família "
-                                aria-label="Quantidade de Membros da família " required />
+                            <input Id="cep" type="number" class="form-control" placeholder="CEP " aria-label="CEP" />
+                        </div>
+                        <div class="col p-2 ">
+                            <input Id="rua" type="text" class="form-control" placeholder="Rua " aria-label="Rua" />
+                        </div>
+                        <div class="col p-2 ">
+                            <input Id="numero" type="number" class="form-control" placeholder="Número "
+                                aria-label="Número" />
                         </div>
 
                 </form>
                 <form action="/action_page.php">
                     <div class="row">
                         <div class="col p-2 ">
-                            <input Id="nomeDp" type="text" class="form-control" placeholder="Nome completo"
-                                aria-label="Nome completo" required />
+                            <input Id="bairro" type="text" class="form-control" placeholder="Bairro"
+                                aria-label="Bairro" />
                         </div>
 
                         <div class="col p-2 ">
-                            <input Id="dtNascDp" type="text" class="form-control" placeholder="Data de Nascimento"
-                                aria-label="Data de Nascimento" required />
+                            <input Id="comp" type="text" class="form-control" placeholder="Complemento"
+                                aria-label="Complemento  " />
                         </div>
                     </div>
                 </form>
 
-                <form action="/action_page.php">
-                    <div class="row">
-                        <div class="col p-2 ">
-                            <input Id="parentesco" type="text" class="form-control" placeholder="Grau de parentesco"
-                                aria-label="Grau de parentesco" required />
-                        </div>
-                        <div class="col p-2 ">
-                            <select Id="sexoDp" class="form-select form-control " aria-label=".form-select-sm example">
-                                <option selected>Sexo</option>
-                                <option value="1">Masculino</option>
-                                <option value="2">Feminino</option>
-                                <option value="3">Prefiro não informar</option>
-                            </select>
-                        </div>
 
-                        <div class="col p-2 ">
-                            <select Id="pcdDp" class="form-select form-control " aria-label=".form-select-sm example">
-                                <option selected>PCD</option>
-                                <option value="1">Sim</option>
-                                <option value="2">Não</option>
-                            </select>
-                        </div>
-                    </div>
-                </form>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" Id="observacao"></textarea>
-                    <label for="floatingTextarea">Observações relevantes: doenças, cuidados, etc...</label>
-                </div>
-
-
-                <!-- ############################# ENDEREÇO ################### -->
-                <div Id="container" class="container mt-3">
+                <!-- ############################# Situação residencial ################### -->
+                <div Id="container" class="container mt-3 ">
                     <div class="container">
                         <div class="row">
                             <div Id="header" class="container">
-                                <h3>Endereço</h3>
+                                <h3>Situação residencial</h3>
                             </div>
                         </div>
                     </div>
-                    <form action="/action_page.php">
-                        <div class="row">   
-                            <div class="col p-2 ">
-                                <input Id="cep" type="number" class="form-control" placeholder="CEP "
-                                    aria-label="CEP" />
-                            </div>
-                            <div class="col p-2 ">
-                                <input Id="rua" type="text" class="form-control" placeholder="Rua " aria-label="Rua" />
-                            </div>
-                            <div class="col p-2 ">
-                                <input Id="numero" type="number" class="form-control" placeholder="Número "
-                                    aria-label="Número" />
-                            </div>
-
-                    </form>
-                    <form action="/action_page.php">
-                        <div class="row">
-                            <div class="col p-2 ">
-                                <input Id="bairro" type="text" class="form-control" placeholder="Bairro"
-                                    aria-label="Bairro" />
-                            </div>
-
-                            <div class="col p-2 ">
-                                <input Id="comp" type="text" class="form-control" placeholder="Complemento"
-                                    aria-label="Complemento  " />
-                            </div>
+                    <!-- Caixas de seleção -->
+                    <div class="col p-2 bg-light form-control">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" Id="danosResidencia">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Danos na residência (destelhamento, alagamento, desabamento)
+                            </label>
                         </div>
-                    </form>
 
-
-                    <!-- ############################# Situação residencial ################### -->
-                    <div Id="container" class="container mt-3 ">
-                        <div class="container">
-                            <div class="row">
-                                <div Id="header" class="container">
-                                    <h3>Situação residencial</h3>
-                                </div>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" Id="perdasPessoais">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Perda de itens pessoais (roupas, sapatos, etc)
+                            </label>
                         </div>
-                        <!-- Caixas de seleção -->
-                        <div class="col p-2 bg-light form-control">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" Id="danosResidencia">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Danos na residência (destelhamento, alagamento, desabamento)
-                                </label>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" Id="perdasPessoais">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Perda de itens pessoais (roupas, sapatos, etc)
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" Id="bensMateriais">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Perda de bens materiais (Móveis e eltrodomésticos)
-                                </label>
-                            </div>
-                            <br>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" name="defesaCivil">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Aceita receber ALERTAS da defesa civil?
-                                </label>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" Id="bensMateriais">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Perda de bens materiais (Móveis e eltrodomésticos)
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="defesaCivil">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Aceita receber ALERTAS da defesa civil?
+                            </label>
                         </div>
                     </div>
-
-                    <!-- Lançamento de Notas -->
-                    <div name="container" class="container mt-3">
-                        <div class="container">
-                            <div class="row">
-
-                            </div>
-                        </div>
-                        <button type="submit" onclick="salvar()" name="bt1" class="btn">
-                            Salvar
-                        </button>
-                        <button type="submit" onclick="limpar()" name="bt2" class="btn">
-                            Limpar
-                        </button>
-                    </div>
-                    <h3 class="text" name="Retorno"></h3>
                 </div>
 
+
             </div>
+            <!-- Lançamento de Notas -->
+            
+            <div id=button class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">Salvar</button>
+                <button class="btn btn-primary" type="button">Limpar</button>
+            </div>
+        </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
 
-            <script src="Front\script.js"></script>
-        
+        <script src="Front\script.js"></script>
+
 </body>
 
 </html>
